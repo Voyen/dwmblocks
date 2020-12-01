@@ -12,7 +12,7 @@ dwmblocks: dwmblocks.o
 dwmblocks.o: dwmblocks.c config.h
 	$(CC) -c dwmblocks.c
 clean:
-	rm -f *.o *.gch dwmblocks config.h
+	rm -f *.o *.gch dwmblocks config.h *.orig *.rej
 install: dwmblocks
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f dwmblocks $(DESTDIR)$(PREFIX)/bin
